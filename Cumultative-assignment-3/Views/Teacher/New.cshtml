@@ -1,0 +1,48 @@
+﻿
+
+
+@{
+    ViewBag.Title = "New";
+}
+
+@model CUMULITATIVE_ASSIGN_1.Models.Teacher
+<div id="containershow">
+
+    <h2>New Teacher</h2>
+    <form method="post" action="/Teacher/Create">
+        <div>
+            <label for="teacherfname">First Name:</label>
+            <input type="text" id="teacherfname" name="teacherfname" />
+
+        </div>
+        <div>
+            <label for="teacherlname">Last Name:</label>
+            <input type="text" id="teacherlname" name="teacherlname" />
+
+        </div>
+        <div>
+            <label for="teacherid">Teacher ID:</label>
+            <input type="text" id="teacherid" name="teacherid" />
+        </div>
+        <div>
+            <label for="employeenumber">Employee Numeber:</label>
+            <input type="number" id="employeenumber" name="employeenumber" />
+
+        </div>
+        <div>
+            <label for="hiredate">Hire Date:</label>
+            <input type="datetime" id="Hiredate" name="hiredate" />
+
+        </div>
+        <div>
+            <label for="Salary">Salary:</label>
+            <input type="number" id="Hiredate" name="salary" />
+
+        </div>
+        <div>
+            <input type="submit" value="Create Teacher" />
+        </div>
+    </form>
+</div>
+<
+

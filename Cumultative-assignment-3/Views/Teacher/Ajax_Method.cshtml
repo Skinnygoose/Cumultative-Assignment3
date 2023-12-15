@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewBag.Title = "Ajax_Method";
+}
+<div>
+
+    <nav>
+        <a class="navlink" href="/Teacher/list">Back To Teachers</a>
+    </nav>
+
+
+    <h2>Ajax_Method</h2>
+
+    <h2>Add New Teacher</h2>
+
+    <div>
+        <label for="teacherfname">First Name:</label>
+        <input type="text" id="teacherfname" name="teacherfname" />
+
+    </div>
+    <div>
+        <label for="teacherlname">Last Name:</label>
+        <input type="text" id="teacherlname" name="teacherlname" />
+
+    </div>
+    <div>
+        <label for="teacherid">Teacher ID:</label>
+        <input type="text" id="teacherid" name="teacherid" />
+    </div>
+    <div>
+        <label for="employeenumber">Employee Numeber:</label>
+        <input type="number" id="employeenumber" name="employeenumber" />
+
+    </div>
+    <div>
+        <label for="hiredate">Hire Date:</label>
+        <input type="datetime" id="hiredate" name="hiredate" />
+
+    </div>
+    <div>
+        <label for="Salary">Salary:</label>
+        <input type="number" id="salary" name="salary" />
+
+    </div>
+    <div>
+        @{
+            //AddTeacher() is a JS method defined in /Scripts/Addteacher.js
+        }
+        <button onclick="AddTeacher();">Add Teacher</button>
+    </div>
+
+</div>
